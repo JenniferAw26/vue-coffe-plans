@@ -18,7 +18,10 @@ import planItem from './components/plan-item.vue';
     </h2>
 
     <div class="plans">
-      <plan-item/>
+      <plan-item name="El soltero" />
+      <plan-item name="El viajero" />
+      <plan-item name="El adulto" />
+      <plan-item />
     </div>
   </div>
 </template>
