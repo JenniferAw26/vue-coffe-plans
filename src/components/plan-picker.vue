@@ -2,10 +2,10 @@
   <div class="plans">
   <plan-picker-item
   @select="printSelected"
+  :selected-plan="selectedPlan"
         v-for="plan in plans"
         :name="plan"
         v-bind:key="plan"/>
-        {{ selectedPlan }}
   </div>
   </template>
    
@@ -15,8 +15,7 @@
   const plans = ref([
   "El soltero",
   "El adicto",
-  "El viajero",
-  "El colombiano"]);
+  "El viajero"]);
   const selectedPlan= ref(null);
 
   const printSelected=(playload) => {
